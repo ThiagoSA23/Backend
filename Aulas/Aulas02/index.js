@@ -1,2 +1,2 @@
 console.log("api ta on");
-console.log("bye");
+console.log("api ta parada");
