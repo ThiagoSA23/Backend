@@ -1,0 +1,196 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1756775859000
+  modified: 1756775859000
+  description: ""
+collection:
+  - url: http://localhost:3000/tarefas
+    name: GET /tarefas – listar
+    meta:
+      id: req_60c2234ed9b042c9a368ee22d2cd3926
+      created: 1756775941670
+      modified: 1756782653015
+      isPrivate: false
+      description: ""
+      sortKey: -1756775941670
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/tarefas
+    name: POST /tarefas – criar
+    meta:
+      id: req_fda76ad263b44708a1eec5423ad38e6e
+      created: 1756776078857
+      modified: 1756782692708
+      isPrivate: false
+      description: ""
+      sortKey: -1756776078857
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+           "nome": "Estudar API REST",
+           "prioridade": 1,
+           "concluida": false
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/tarefas/a206
+    name: GET /tarefas/a206 – por id
+    meta:
+      id: req_579cb474565348d288d6b7c4df508d9b
+      created: 1756781955527
+      modified: 1756782749787
+      isPrivate: false
+      description: ""
+      sortKey: -1756781955527
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/tarefas/1
+    name: GET /tarefas/1 – não encontrado
+    meta:
+      id: req_da915389b8f44888b3e1e3b60c5cc426
+      created: 1756782140625
+      modified: 1756782781572
+      isPrivate: false
+      description: ""
+      sortKey: -1756782140625
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/tarefas/a206
+    name: PUT /tarefas/a206 – atualizar
+    meta:
+      id: req_613040c460244004871fb49beb6a6a86
+      created: 1756782183420
+      modified: 1756782800432
+      isPrivate: false
+      description: ""
+      sortKey: -1756782183420
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |
+        {
+           "nome": "Estudar API REST",
+           "prioridade": 2,
+           "concluida": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/tarefas/a206
+    name: PATCH /tarefas/a206 – atualizar parcial
+    meta:
+      id: req_0ccb578481c04ca8bb944f131ece3a6f
+      created: 1756782447318
+      modified: 1756782825266
+      isPrivate: false
+      description: ""
+      sortKey: -1756782447318
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |
+        {
+           "concluida": false
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/tarefas/a206
+    name: DELETE /tarefas/a206 – remover
+    meta:
+      id: req_73fdbe496b554b998f39f5a8952b445a
+      created: 1756782533808
+      modified: 1756782848825
+      isPrivate: false
+      description: ""
+      sortKey: -1756782533808
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1756775871481
+    modified: 1756775871481
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1756775871436
+    modified: 1756775871436
+    isPrivate: false
